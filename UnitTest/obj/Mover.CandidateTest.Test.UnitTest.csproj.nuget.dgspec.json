@@ -1,0 +1,120 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\UnitTest\\Mover.CandidateTest.Test.UnitTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\UnitTest\\Mover.CandidateTest.Test.UnitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\UnitTest\\Mover.CandidateTest.Test.UnitTest.csproj",
+        "projectName": "Mover.CandidateTest.Test.UnitTest",
+        "projectPath": "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\UnitTest\\Mover.CandidateTest.Test.UnitTest.csproj",
+        "packagesPath": "C:\\Users\\416418\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\UnitTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\416418\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\KPMG.UserManagemnt.Application\\KPMG.UserManagement.Application.csproj": {
+                "projectPath": "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\KPMG.UserManagemnt.Application\\KPMG.UserManagement.Application.csproj"
+              },
+              "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\KPMG.UserManagemnt.BusinessObjects\\KPMG.UserManagement.BusinessObjects.csproj": {
+                "projectPath": "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\KPMG.UserManagemnt.BusinessObjects\\KPMG.UserManagement.BusinessObjects.csproj"
+              },
+              "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\KPMG.UserManagemnt.DataAccessObjects\\KPMG.UserManagement.DataAccessObjects.csproj": {
+                "projectPath": "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\KPMG.UserManagemnt.DataAccessObjects\\KPMG.UserManagement.DataAccessObjects.csproj"
+              },
+              "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\KPMG.UserManagemnt.Models\\KPMG.UserManagement.Models.csproj": {
+                "projectPath": "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\KPMG.UserManagemnt.Models\\KPMG.UserManagement.Models.csproj"
+              },
+              "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\KPMG.UserManagemnt\\KPMGUserManagement.csproj": {
+                "projectPath": "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\KPMG.UserManagemnt\\KPMGUserManagement.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.2-mauipre.1.22054.8, )"
+            },
+            "Unity": {
+              "target": "Package",
+              "version": "[5.11.10, )"
+            },
+            "Unity.Container": {
+              "target": "Package",
+              "version": "[5.11.11, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.3" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.3" />
+    <PackageReference Include="coverlet.collector" Version="3.0.2" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.2-mauipre.1.22054.8" />
+    <PackageReference Include="Unity" Version="5.11.10" />
+    <PackageReference Include="Unity.Container" Version="5.11.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KPMG.UserManagement.Application\KPMG.UserManagement.Application.csproj" />
+    <ProjectReference Include="..\KPMG.UserManagement.BusinessObjects\KPMG.UserManagement.BusinessObjects.csproj" />
+    <ProjectReference Include="..\KPMG.UserManagement.DataAccessObjects\KPMG.UserManagement.DataAccessObjects.csproj" />
+    <ProjectReference Include="..\KPMG.UserManagement.Models\KPMG.UserManagement.Models.csproj" />
+    <ProjectReference Include="..\KPMG.UserManagemnt.\KPMGUserManagement.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KPMGUserManagement", "KPMG.UserManagemnt\KPMGUserManagement.csproj", "{9AE7C62A-DC64-4B40-B9AC-C562D81D80CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataLayer", "DataLayer", "{6814EB40-CEA2-4043-B97E-47B5D65CB669}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessDomainLayer", "BusinessDomainLayer", "{69A76E11-4F33-4DB5-8898-E62215D13FE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{61A93A75-B8EE-4F40-8B92-26E2A1872720}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KPMG.UserManagement.Test.UnitTest", "UnitTest\KPMG.UserManagement.Test.UnitTest.csproj", "{4F0AA36F-7268-435A-9296-EFB4A28775BF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KPMG.UserManagement.BusinessObjects", "KPMG.UserManagement.BusinessObjects\KPMG.UserManagement.BusinessObjects.csproj", "{284AC515-3F74-457A-9352-797568E31581}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{08963E2C-38D2-4F88-9FFF-0C3BCAF9DF44}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KPMG.UserManagement.Application", "KPMG.UserManagement.Application\KPMG.UserManagement.Application.csproj", "{428158A2-1EF6-4094-B1D9-77A9664F3073}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KPMG.UserManagement.DataAccessObjects", "KPMG.UserManagement.DataAccessObjects\KPMG.UserManagement.DataAccessObjects.csproj", "{2D8F46CC-ACFF-4943-80B4-65FD3F50B907}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KPMG.UserManagement.Models", "KPMG.UserManagement.Models\KPMG.UserManagement.Models.csproj", "{82FFCD3C-46AB-4EC2-B727-BE55BA992EB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AE7C62A-DC64-4B40-B9AC-C562D81D80CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AE7C62A-DC64-4B40-B9AC-C562D81D80CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AE7C62A-DC64-4B40-B9AC-C562D81D80CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AE7C62A-DC64-4B40-B9AC-C562D81D80CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F0AA36F-7268-435A-9296-EFB4A28775BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F0AA36F-7268-435A-9296-EFB4A28775BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F0AA36F-7268-435A-9296-EFB4A28775BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F0AA36F-7268-435A-9296-EFB4A28775BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{284AC515-3F74-457A-9352-797568E31581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{284AC515-3F74-457A-9352-797568E31581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{284AC515-3F74-457A-9352-797568E31581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{284AC515-3F74-457A-9352-797568E31581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{428158A2-1EF6-4094-B1D9-77A9664F3073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{428158A2-1EF6-4094-B1D9-77A9664F3073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{428158A2-1EF6-4094-B1D9-77A9664F3073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{428158A2-1EF6-4094-B1D9-77A9664F3073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D8F46CC-ACFF-4943-80B4-65FD3F50B907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D8F46CC-ACFF-4943-80B4-65FD3F50B907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D8F46CC-ACFF-4943-80B4-65FD3F50B907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D8F46CC-ACFF-4943-80B4-65FD3F50B907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82FFCD3C-46AB-4EC2-B727-BE55BA992EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82FFCD3C-46AB-4EC2-B727-BE55BA992EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82FFCD3C-46AB-4EC2-B727-BE55BA992EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82FFCD3C-46AB-4EC2-B727-BE55BA992EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4F0AA36F-7268-435A-9296-EFB4A28775BF} = {61A93A75-B8EE-4F40-8B92-26E2A1872720}
+		{284AC515-3F74-457A-9352-797568E31581} = {69A76E11-4F33-4DB5-8898-E62215D13FE1}
+		{428158A2-1EF6-4094-B1D9-77A9664F3073} = {08963E2C-38D2-4F88-9FFF-0C3BCAF9DF44}
+		{2D8F46CC-ACFF-4943-80B4-65FD3F50B907} = {6814EB40-CEA2-4043-B97E-47B5D65CB669}
+		{82FFCD3C-46AB-4EC2-B727-BE55BA992EB3} = {69A76E11-4F33-4DB5-8898-E62215D13FE1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BD85020-EA4F-4E34-AB20-38BB72929759}
+	EndGlobalSection
+EndGlobal

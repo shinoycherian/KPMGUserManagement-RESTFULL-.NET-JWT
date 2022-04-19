@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Authorization\**" />
+    <Compile Remove="Controllers\Inventory\**" />
+    <Content Remove="Authorization\**" />
+    <Content Remove="Controllers\Inventory\**" />
+    <EmbeddedResource Remove="Authorization\**" />
+    <EmbeddedResource Remove="Controllers\Inventory\**" />
+    <None Remove="Authorization\**" />
+    <None Remove="Controllers\Inventory\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\User\ProductController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Authorization\AllowAnonymousAttribute.cs" />
+    <Compile Include="Authorization\AuthorizeAttribute.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.17.0" />
+    <PackageReference Include="Unity" Version="5.11.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KPMG.UserManagement.Application\KPMG.UserManagement.Application.csproj" />
+    <ProjectReference Include="..\KPMG.UserManagement.BusinessObjects\KPMG.UserManagement.BusinessObjects.csproj" />
+    <ProjectReference Include="..\KPMG.UserManagement.DataAccessObjects\KPMG.UserManagement.DataAccessObjects.csproj" />
+    <ProjectReference Include="..\KPMG.UserManagement.Models\KPMG.UserManagement.Models.csproj" />
+  </ItemGroup>
+
+
+</Project>

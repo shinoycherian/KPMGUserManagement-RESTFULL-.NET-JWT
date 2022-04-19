@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="BCrypt.Net" Version="0.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.2-mauipre.1.22054.8" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KPMG.UserManagement.BusinessObjects\KPMG.UserManagement.BusinessObjects.csproj" />
+    <ProjectReference Include="..\KPMG.UserManagement.DataAccessObjects\KPMG.UserManagement.DataAccessObjects.csproj" />
+    <ProjectReference Include="..\KPMG.UserManagement.Models\KPMG.UserManagement.Models.csproj" />
+  </ItemGroup>
+
+</Project>
