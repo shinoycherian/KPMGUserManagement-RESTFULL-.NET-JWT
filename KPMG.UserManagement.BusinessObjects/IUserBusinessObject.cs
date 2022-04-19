@@ -8,12 +8,12 @@ namespace KPMG.UserManagement.BusinessObjects
     using System.Threading.Tasks;
     using KPMG.UserManagement.Models;
     /// <summary>
-    /// interface IProductBusinessObject
+    /// interface IuserBusinessObject
     /// </summary>
     public interface IUserBusinessObject
     {
         /// <summary>
-        /// Create New Product
+        /// Create New user
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
@@ -26,37 +26,37 @@ namespace KPMG.UserManagement.BusinessObjects
         /// <returns></returns>
         public bool CreateUserWIthRole(User user, params ApplicationRole[] userroles);
         /// <summary>
-        /// Get ProductBy Id PrimaryKey
+        /// Get userBy Id PrimaryKey
         /// </summary>
         /// <param name="username"></param>
         /// <returns></returns>
         User GetByUserName(string username);
 
         /// <summary>
-        /// Get ProductBy Id PrimaryKey
+        /// Get userBy Id PrimaryKey
         /// </summary>
         /// <param name="Id"></param>
         /// <returns></returns>
         User GetByUserId(int userid);
         /// <summary>
-        /// Get ProductBy Id PrimaryKey
+        /// Get userBy Id PrimaryKey
         /// </summary>
         /// <param name="Id"></param>
         /// <returns></returns>
         User GetByUserNameAndPwd(string usernmae,string password);
         /// <summary>
-        /// Get All Products
+        /// Get All users
         /// </summary>
         /// <returns></returns>
         IQueryable<User> GetAllUsers();
         /// <summary>
-        /// Create New Product
+        /// Create New user
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
         bool DeleteUser(User user);
         /// <summary>
-        /// Get ProductBy Id PrimaryKey
+        /// Get userBy Id PrimaryKey
         /// </summary>
         /// <param name="username"></param>
         /// <returns></returns>

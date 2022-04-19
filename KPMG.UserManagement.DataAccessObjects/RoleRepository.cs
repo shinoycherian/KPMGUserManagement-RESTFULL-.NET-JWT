@@ -12,7 +12,7 @@ namespace KPMG.UserManagement.DataAccessObjects
 	using KPMG.UserManagement.Models;
 	using System.Data.Entity.Core.Objects;
 	/// <summary>
-	/// Product Repository
+	/// user Repository
 	/// </summary>
 	public class RoleRepository
 	{
@@ -51,7 +51,7 @@ namespace KPMG.UserManagement.DataAccessObjects
 			Repository.Add(entity);
 		}
 		/// <summary>
-		/// Get Product By SKU Code.
+		/// Get user By SKU Code.
 		/// </summary>
 		/// <param name="code"></param>
 		/// <returns></returns>

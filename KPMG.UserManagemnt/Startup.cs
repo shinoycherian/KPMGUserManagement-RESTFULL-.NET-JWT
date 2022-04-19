@@ -1,28 +1,34 @@
-using System;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using KPMG.UserManagement.BusinessObjects;
-using KPMG.UserManagement.Application.Services;
-using KPMG.UserManagement.Application;
-using KPMG.UserManagement.Application.Authorization;
-using KPMG.UserManagement.Application.Security;
-using KPMG.UserManagement.Application.Security.Tokens;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
 
-namespace MoverCandidateTest
+
+namespace KPMGCandidateTest
 {
+    using System;
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Hosting;
+    using KPMG.UserManagement.BusinessObjects;
+    using KPMG.UserManagement.Application.Services;
+    using KPMG.UserManagement.Application;
+    using KPMG.UserManagement.Application.Security;
+    using KPMG.UserManagement.Application.Security.Tokens;
+    using Microsoft.AspNetCore.Authentication.JwtBearer;
+    using Microsoft.IdentityModel.Tokens;
     public class Startup
     {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="configuration"></param>
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -50,7 +56,7 @@ namespace MoverCandidateTest
 
             var signingConfigurations = new SigningConfigurations(tokenOptions.Secret);
             services.AddSingleton(signingConfigurations);
-
+            //Configure JWT token options.
             services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

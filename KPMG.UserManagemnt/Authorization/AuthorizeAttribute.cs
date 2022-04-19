@@ -25,14 +25,6 @@ using KPMG.UserManagement.Models;
             var allowAnonymous = context.ActionDescriptor.EndpointMetadata.OfType<AllowAnonymousAttribute>().Any();
             if (allowAnonymous)
                 return;
-
-            // authorization
-            //var user = (User)context.HttpContext.Items["User"];
-            //if (user == null || (_roles.Any() && !_roles.Contains(user.UserRoles.)))
-            //{
-            //    // not logged in or role not authorized
-            //    context.Result = new JsonResult(new { message = "Unauthorized" }) { StatusCode = StatusCodes.Status401Unauthorized };
-            //}
         }
     }
 }

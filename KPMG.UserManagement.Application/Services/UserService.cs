@@ -20,7 +20,7 @@ namespace KPMG.UserManagement.Application.Services
         private readonly IPasswordHasher _passwordHasher;
         private readonly ITokenHandler _tokenHandler;
         /// <summary>
-        /// ProductService
+        /// userService
         /// </summary>
         /// <param name="mapper"></param>
         /// <param name="nameobject"></param>
@@ -134,10 +134,7 @@ namespace KPMG.UserManagement.Application.Services
         public UserAuthResponseApiModel AuthenticateUser(UserAuthRequestApiModel userauthequestmodel)
         {
             var user = this._userBusinessObject.GetByUserName(userauthequestmodel.UserName);
-           
-          // var userrole = this._userBusinessObject.Ge(user.Id);
-
-            // validate.
+             // validate.
 
             if (user == null || !this._passwordHasher.PasswordMatches(userauthequestmodel.Password, user.PasswordHash))
             {

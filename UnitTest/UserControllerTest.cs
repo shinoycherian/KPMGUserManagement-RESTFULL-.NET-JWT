@@ -16,7 +16,7 @@ namespace KPMG.UserManagement.Test.UnitTest
     public class UserControllerTest
     {
         [TestMethod]
-        public void CreateProduct()
+        public void Createuser()
         {
             
              RegisterUserApiRequest registerusermodel = RegisterUserModel();         

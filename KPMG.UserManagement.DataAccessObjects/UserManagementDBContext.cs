@@ -18,7 +18,7 @@ namespace KPMG.UserManagement.DataAccessObjects
                 new DropCreateDatabaseIfModelChanges<UserManagementDBContext>());
         }
         /// <summary>
-        /// Product DB Set
+        /// user DB Set
         /// </summary>
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Role> Roles { get; set; }

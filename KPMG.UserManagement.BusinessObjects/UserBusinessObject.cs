@@ -6,7 +6,7 @@ namespace KPMG.UserManagement.BusinessObjects
     using KPMG.UserManagement.Models;
     using KPMG.UserManagement.DataAccessObjects;
     /// <summary>
-    /// ProductBusinessObject class Implements IProductBusinessObject.
+    /// userBusinessObject class Implements IuserBusinessObject.
     /// </summary>
     public class UserBusinessObject : IUserBusinessObject
     {
@@ -49,9 +49,9 @@ namespace KPMG.UserManagement.BusinessObjects
           //  this._userrolerepository = RepositoryHelper.GetUserRoleRepository(_context);
         }
         /// <summary>
-        /// Create Product
+        /// Create user
         /// </summary>
-        /// <param name="product"></param>
+        /// <param name="user"></param>
         /// <returns></returns>
         public bool CreateUser(User user)
         {
@@ -61,9 +61,9 @@ namespace KPMG.UserManagement.BusinessObjects
                 return true;
         }
         /// <summary>
-        /// Create Product
+        /// Create user
         /// </summary>
-        /// <param name="product"></param>
+        /// <param name="user"></param>
         /// <returns></returns>
         public bool CreateUserWIthRole(User user,params ApplicationRole[] userroles)
         {
@@ -84,10 +84,10 @@ namespace KPMG.UserManagement.BusinessObjects
         }
 
         /// <summary>
-        /// Dels the product.
+        /// Dels the user.
         /// </summary>
         /// <param name="user">
-        /// The product.
+        /// The user.
         /// </param>
         /// <returns>
         /// The delete user.
@@ -100,7 +100,7 @@ namespace KPMG.UserManagement.BusinessObjects
         }
 
         /// <summary>
-        /// Get the product.
+        /// Get the user.
         /// </summary>
         /// <param name="username">
         /// The pid.
@@ -111,7 +111,7 @@ namespace KPMG.UserManagement.BusinessObjects
             return this ._userrepository.GetByUserName(username);
         }
         /// <summary>
-        /// Get the product.
+        /// Get the user.
         /// </summary>
         /// <param name="id">
         /// The pid.
@@ -133,7 +133,7 @@ namespace KPMG.UserManagement.BusinessObjects
         //    return this._userrolerepository.GetByUserId(userid);
         //}
         /// <summary>
-        /// Get the product.
+        /// Get the user.
         /// </summary>
         /// <param name="name">
         /// The pid.
@@ -145,13 +145,13 @@ namespace KPMG.UserManagement.BusinessObjects
             return this._userrepository.GetByUserNameAndPwd(username,password);
         }
         /// <summary>
-        /// Updates the product.
+        /// Updates the user.
         /// </summary>
-        /// <param name="product">
-        /// The product.
+        /// <param name="user">
+        /// The user.
         /// </param>
         /// <returns>
-        /// The update product.
+        /// The update user.
         /// </returns>
         public User UpdateUser(User user)
         {
@@ -160,7 +160,7 @@ namespace KPMG.UserManagement.BusinessObjects
         }
        
         /// <summary>
-        /// Get All Products
+        /// Get All users
         /// </summary>
         /// <returns></returns>
         public IQueryable<User> GetAllUsers()

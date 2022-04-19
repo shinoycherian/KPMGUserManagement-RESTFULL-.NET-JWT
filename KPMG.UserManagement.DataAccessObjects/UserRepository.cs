@@ -12,7 +12,7 @@ namespace KPMG.UserManagement.DataAccessObjects
 	using KPMG.UserManagement.Models;
 	using System.Data.Entity.Core.Objects;
 	/// <summary>
-	/// Product Repository
+	/// user Repository
 	/// </summary>
 	public class UserRepository
 	{
@@ -76,7 +76,7 @@ namespace KPMG.UserManagement.DataAccessObjects
 			return await Repository.SaveAsync();
 		}
 		/// <summary>
-		/// Get Product By SKU Code.
+		/// Get user By SKU Code.
 		/// </summary>
 		/// <param name="code"></param>
 		/// <returns></returns>
@@ -90,7 +90,7 @@ namespace KPMG.UserManagement.DataAccessObjects
 			return null;
 		}
 		/// <summary>
-		/// Get Product By SKU Code.
+		/// Get user By SKU Code.
 		/// </summary>
 		/// <param name="code"></param>
 		/// <returns></returns>

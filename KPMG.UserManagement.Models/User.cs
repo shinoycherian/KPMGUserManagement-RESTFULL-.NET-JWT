@@ -5,7 +5,7 @@ namespace KPMG.UserManagement.Models
     using System.Collections.ObjectModel;
     using System.ComponentModel.DataAnnotations;
     /// <summary>
-    /// Product Model.
+    /// user Model.
     /// </summary>
     public class User
     {

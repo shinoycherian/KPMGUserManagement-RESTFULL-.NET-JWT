@@ -25,9 +25,9 @@ namespace KPMG.UserManagement.Controllers.User
         ///  
         /// </summary>
         /// <returns></returns>
-      
+
         [HttpGet]
-        [Authorize(Roles ="Administrator")]
+        [Authorize(Roles = "Administrator")]
         public IActionResult GetAllUsers()
         {
             UserListApiModel allusers = _userService.GetAllUsers();
@@ -54,8 +54,7 @@ namespace KPMG.UserManagement.Controllers.User
             return Ok(response);
         }
         /// <summary>
-        /// Add a new Product with SKU Code.
-        /// Create new user.
+        /// Create a new user with FirstName,LastNam,UserName ,Password ,.
         /// </summary>
         /// <param name="registerusermodel"></param>
         /// <returns></returns>
@@ -64,7 +63,7 @@ namespace KPMG.UserManagement.Controllers.User
         [HttpPost]
         public IActionResult Register([FromBody] RegisterUserApiRequest registerusermodel)
         {
-            RegisterUserApiResponse result = this._userService.RegisterUser(registerusermodel,ApplicationRole.User);
+            RegisterUserApiResponse result = this._userService.RegisterUser(registerusermodel, ApplicationRole.User);
             if (result == null)
             {
                 throw new Exception("Error in create user");
@@ -73,10 +72,10 @@ namespace KPMG.UserManagement.Controllers.User
         }
 
         /// <summary>
-        /// Add a new Product with SKU Code.
-        /// Model [SKUCode ,Name,Description,Quantity,Price]
+        /// update a new user .
+        /// Model [Firstlname, LastName,Password].
         /// </summary>
-        /// <param name="productmodel"></param>
+        /// <param name="usermodel"></param>
         /// <returns></returns>
         [HttpPost]
         [Authorize(Roles = "Administrator")]
@@ -90,21 +89,25 @@ namespace KPMG.UserManagement.Controllers.User
             return StatusCode(StatusCodes.Status200OK, result);
         }
         /// <summary>
-        /// Add a new Product with SKU Code.
-        /// Model [SKUCode ,Name,Description,Quantity,Price]
+        /// Delete User by user Id.
         /// </summary>
-        /// <param name="productmodel"></param>
+        /// <param name="usermodel"></param>
         /// <returns></returns>
-        [HttpPost]
+        [HttpPut("{id:int}")]
         [Authorize(Roles = "Administrator")]
-        public IActionResult Delete([FromBody] RegisterUserApiRequest registerusermodel)
+        public IActionResult Delete(int id)
         {
-            RegisterUserApiResponse result = this._userService.RegisterUser(registerusermodel);
-            if (result == null)
+            UserApiModel user = this._userService.GetUserById(id);
+
+            if (user == null)
             {
-                throw new Exception("Error in create new Product");
+                return NotFound("User Does not Exist.");
             }
-            return StatusCode(StatusCodes.Status201Created, registerusermodel);
+            bool result=this._userService.DeleteUser(user);
+            if(!result)
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                     "Error deleting data");
+            return StatusCode(StatusCodes.Status200OK, user);
         }
     }
     }
