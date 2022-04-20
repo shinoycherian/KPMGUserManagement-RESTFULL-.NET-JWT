@@ -56,9 +56,9 @@ namespace KPMG.UserManagement.Test.UnitTest
         {
             var userapimodel = new RegisterUserApiRequest
             {
-                FirstName = "Elon",
-                LastName = "Musk",
-                UserName = "Elon.Musk"
+                FirstName = "FirstName1",
+                LastName = "Lastname1",
+                UserName = "FirstName1.Lastname1"
             };
             return userapimodel;
         }
@@ -66,8 +66,8 @@ namespace KPMG.UserManagement.Test.UnitTest
         {
             var user = new User()
             {
-                FirstName = "Martin",
-                LastName = "Fowler",
+                FirstName = "FirstName2",
+                LastName = "Lastname3",
                 PasswordHash = "aerzcafecd<"
             };
 

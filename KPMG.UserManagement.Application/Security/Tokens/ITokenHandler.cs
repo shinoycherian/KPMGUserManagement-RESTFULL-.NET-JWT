@@ -6,9 +6,9 @@ namespace KPMG.UserManagement.Application.Security.Tokens
     using System.Collections.Generic;
     public interface ITokenHandler
     {
-         AccessToken CreateAccessToken(User user);
+         AccessToken CreateAccessToken(User user, Role role);
          RefreshToken TakeRefreshToken(string token);
          void RevokeRefreshToken(string token);
-         List<string> GetClaims(string token, string claimType);
+         
     }
 }

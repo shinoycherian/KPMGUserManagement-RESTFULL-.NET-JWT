@@ -25,10 +25,10 @@ namespace  KPMG.UserManagement.Application.Security.Tokens
             _signingConfigurations = signingConfigurations;
         }
 
-        public AccessToken CreateAccessToken(User user)
+        public AccessToken CreateAccessToken(User user,Role role)
         {
             var refreshToken = BuildRefreshToken();
-            var accessToken = BuildAccessToken(user, refreshToken);
+            var accessToken = BuildAccessToken(user,role, refreshToken);
             _refreshTokens.Add(refreshToken);
 
             return accessToken;
@@ -62,7 +62,7 @@ namespace  KPMG.UserManagement.Application.Security.Tokens
             return refreshToken;
         }
 
-        private AccessToken BuildAccessToken(User user,RefreshToken refreshToken)
+        private AccessToken BuildAccessToken(User user,Role role, RefreshToken refreshToken)
         {
             var accessTokenExpiration = DateTime.Now.AddSeconds(_tokenOptions.AccessTokenExpiration);
 
@@ -70,7 +70,7 @@ namespace  KPMG.UserManagement.Application.Security.Tokens
             (
                 issuer : _tokenOptions.Issuer,
                 audience : _tokenOptions.Audience,
-                claims : GetClaims(user),
+                claims : GetClaims(user,role),
                 expires : accessTokenExpiration,
                 notBefore : DateTime.Now,
                 signingCredentials : _signingConfigurations.SigningCredentials
@@ -82,51 +82,18 @@ namespace  KPMG.UserManagement.Application.Security.Tokens
             return new AccessToken(accessToken, accessTokenExpiration.Ticks, refreshToken);
         }
 
-        private IEnumerable<Claim> GetClaims(User user)
+        private IEnumerable<Claim> GetClaims(User user,Role role)
         {
             var claims = new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(JwtRegisteredClaimNames.Sub, user.UserName)
             };
-            claims.Add(new Claim(ClaimTypes.Role, user.Roles.First().Name));
+            claims.Add(new Claim(ClaimTypes.Role, role.Name));
             
 
             return claims;
         }
-        public bool ValidateCurrentToken(string token)
-        {
-         var tokenHandler = new JwtSecurityTokenHandler();
-            try
-            {
-                tokenHandler.ValidateToken(token, new TokenValidationParameters
-                {
-                    ValidateIssuerSigningKey = true,
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidIssuer = _tokenOptions.Issuer,
-                    ValidAudience = _tokenOptions.Audience,
-                    IssuerSigningKey = _signingConfigurations.SecurityKey
-                }, out SecurityToken validatedToken);
-            }
-            catch
-            {
-                return false;
-            }
-            return true;
-        }
-        public List<string> GetClaims(string token, string claimType)
-        {
-            List<string> result = new List<string>();
-
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var securityToken = tokenHandler.ReadToken(token) as JwtSecurityToken;
-            foreach(Claim claim in securityToken.Claims.Where(claim => claim.Type == claimType))
-            {
-                result.Add(claim.Value);
-            }
-            return result;
-
-        }
+     
     }
 }

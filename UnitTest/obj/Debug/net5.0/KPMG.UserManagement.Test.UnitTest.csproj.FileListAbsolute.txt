@@ -20,7 +20,6 @@ C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\bin\Debug\n
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\bin\Debug\net5.0\KPMG.UserManagement.Test.UnitTest.pdb
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\bin\Debug\net5.0\BCrypt.Net.dll
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\bin\Debug\net5.0\Castle.Core.dll
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\bin\Debug\net5.0\EntityFramework.SqlServer.dll
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\bin\Debug\net5.0\EntityFramework.dll
@@ -158,3 +157,7 @@ C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\obj\Debug\n
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\UnitTest\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll

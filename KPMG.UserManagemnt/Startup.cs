@@ -16,6 +16,7 @@ namespace KPMGCandidateTest
     using KPMG.UserManagement.Application.Security.Tokens;
     using Microsoft.AspNetCore.Authentication.JwtBearer;
     using Microsoft.IdentityModel.Tokens;
+    using Microsoft.OpenApi.Models;
     public class Startup
     {
     /// <summary>
@@ -56,6 +57,9 @@ namespace KPMGCandidateTest
 
             var signingConfigurations = new SigningConfigurations(tokenOptions.Secret);
             services.AddSingleton(signingConfigurations);
+            //Swagger config for autherization based on bearer tokken.
+            services.AddSwaggerGen();
+            
             //Configure JWT token options.
             services.AddAuthentication(x =>
             {
@@ -95,7 +99,7 @@ namespace KPMGCandidateTest
 
             app.UseAuthorization();
             app.UseAuthentication();
-          
+            app.UseSwagger();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

@@ -73,7 +73,6 @@ C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\b
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\bin\Debug\net5.0\KPMGUserManagement.pdb
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\bin\Debug\net5.0\BCrypt.Net.dll
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\bin\Debug\net5.0\EntityFramework.SqlServer.dll
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\bin\Debug\net5.0\EntityFramework.dll
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
@@ -123,4 +122,8 @@ C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\o
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\obj\Debug\net5.0\KPMGUserManagement.csproj.CopyComplete
+C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\416418\Documents\Jobs\2022\KPMG\KPMGUserManagement\KPMG.UserManagemnt\obj\Debug\net5.0\KPMGUserManagement.MvcApplicationPartsAssemblyInfo.cs

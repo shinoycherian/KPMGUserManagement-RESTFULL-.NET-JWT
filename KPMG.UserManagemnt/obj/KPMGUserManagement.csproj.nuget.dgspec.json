@@ -62,10 +62,6 @@
               "target": "Package",
               "version": "[11.0.0, )"
             },
-            "BCrypt.Net": {
-              "target": "Package",
-              "version": "[0.1.0, )"
-            },
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
               "version": "[2.2.5, )"
@@ -358,6 +354,14 @@
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
               "version": "[2.2.5, )"
+            },
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.0, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",

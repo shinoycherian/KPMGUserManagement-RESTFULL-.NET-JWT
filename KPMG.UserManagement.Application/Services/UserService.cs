@@ -7,11 +7,10 @@ namespace KPMG.UserManagement.Application.Services
     using KPMG.UserManagement.Models;
     using KPMG.UserManagement.BusinessObjects;
     using KPMG.UserManagement.Application.ApiModels.User;
-    using KPMG.UserManagement.Application.Authorization;
     using KPMG.UserManagement.Application.Security;
     using KPMG.UserManagement.Application.Security.Tokens;
     using AutoMapper;
-    using BCrypt.Net;
+
     public class UserService :IUserService
     {
 
@@ -134,7 +133,10 @@ namespace KPMG.UserManagement.Application.Services
         public UserAuthResponseApiModel AuthenticateUser(UserAuthRequestApiModel userauthequestmodel)
         {
             var user = this._userBusinessObject.GetByUserName(userauthequestmodel.UserName);
-             // validate.
+            // validate.
+            var userrole = this._userBusinessObject.GetByUserRoleByUserId(user.Id);
+
+            var role = this._userBusinessObject.GetRoleById(userrole.RoleId);
 
             if (user == null || !this._passwordHasher.PasswordMatches(userauthequestmodel.Password, user.PasswordHash))
             {
@@ -143,16 +145,11 @@ namespace KPMG.UserManagement.Application.Services
             }
             // authentication successful ,so generate jwt token
             
-            var jwtAccessToken = _tokenHandler.CreateAccessToken(user);
+            var jwtAccessToken = _tokenHandler.CreateAccessToken(user,role);
 
             return new UserAuthResponseApiModel(true,null, jwtAccessToken.Token);
         }
 
-        public bool IsAdminUser(string token)
-        {
-           return _tokenHandler.GetClaims(token,"Administrator")
-                .Contains(ApplicationRole
-                .Administrator.ToString());
-        }
+      
     }
 }

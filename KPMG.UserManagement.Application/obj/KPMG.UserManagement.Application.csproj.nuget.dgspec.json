@@ -62,10 +62,6 @@
               "target": "Package",
               "version": "[11.0.0, )"
             },
-            "BCrypt.Net": {
-              "target": "Package",
-              "version": "[0.1.0, )"
-            },
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
               "version": "[2.2.5, )"

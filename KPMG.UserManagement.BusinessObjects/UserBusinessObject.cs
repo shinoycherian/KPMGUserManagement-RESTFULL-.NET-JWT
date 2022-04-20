@@ -13,7 +13,7 @@ namespace KPMG.UserManagement.BusinessObjects
 
         private readonly IUnitOfWork _uow;
         private readonly UserRepository _userrepository;
-       // private readonly UserRoleRepository _userrolerepository;
+        private readonly UserRoleRepository _userrolerepository;
         private readonly RoleRepository _rolerepository;
         private readonly IObjectContext _context;
 
@@ -27,7 +27,7 @@ namespace KPMG.UserManagement.BusinessObjects
             this._uow = RepositoryHelper.GetUnitOfWork(_context);
             this._userrepository = RepositoryHelper.GetUserRepository(_context);
             this._rolerepository= RepositoryHelper.GetRoleRepository(_context);
-           // this._userrolerepository = RepositoryHelper.GetUserRoleRepository(_context);
+            this._userrolerepository = RepositoryHelper.GetUserRoleRepository(_context);
 
         }
         /// <summary>
@@ -46,7 +46,7 @@ namespace KPMG.UserManagement.BusinessObjects
             this._uow = RepositoryHelper.GetUnitOfWork(_context);
             this._userrepository = RepositoryHelper.GetUserRepository(_context);
             this._rolerepository = RepositoryHelper.GetRoleRepository(_context);
-          //  this._userrolerepository = RepositoryHelper.GetUserRoleRepository(_context);
+            this._userrolerepository = RepositoryHelper.GetUserRoleRepository(_context);
         }
         /// <summary>
         /// Create user
@@ -72,13 +72,12 @@ namespace KPMG.UserManagement.BusinessObjects
 
             foreach (var role in roles)
             {
-                
-                user.Roles.Add(role );
+                this._userrolerepository.Add(new UserRole { RoleId = role.Id });
             }
            
             this._userrepository.Add(user);
             this._userrepository.Save();
-           // this._userrolerepository.Save();
+            this._userrolerepository.Save();
             
             return true;
         }
@@ -117,6 +116,18 @@ namespace KPMG.UserManagement.BusinessObjects
         /// The pid.
         /// </param>
         /// <returns>Single entity</returns>
+        public Role GetRoleById(int id)
+        {
+            return this._rolerepository.GetRoleId(id);
+        }
+
+        /// <summary>
+        /// Get the user.
+        /// </summary>
+        /// <param name="id">
+        /// The pid.
+        /// </param>
+        /// <returns>Single entity</returns>
         public User GetByUserId(int userid)
         {
             return this._userrepository.GetByUserId(userid);
@@ -128,10 +139,10 @@ namespace KPMG.UserManagement.BusinessObjects
         /// The pid.
         /// </param>
         /// <returns>Single entity</returns>
-        //public UserRole GetByUserRoleByUserId(int userid)
-        //{
-        //    return this._userrolerepository.GetByUserId(userid);
-        //}
+        public UserRole GetByUserRoleByUserId(int userid)
+        {
+            return this._userrolerepository.GetByUserId(userid);
+        }
         /// <summary>
         /// Get the user.
         /// </summary>

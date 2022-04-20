@@ -55,11 +55,11 @@ namespace KPMG.UserManagement.DataAccessObjects
 		/// </summary>
 		/// <param name="code"></param>
 		/// <returns></returns>
-		public Role GetByRoleName(string rolename)
+		public Role GetRoleId(int id)
 		{  
 			if (this._repository.All().Count<Role>()>0)
 			{
-				return this._repository.Single(e => e.Name == rolename);
+				return this._repository.Single(e => e.Id == id);
 			}
 			return null;
 		}		

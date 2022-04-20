@@ -25,20 +25,23 @@ namespace KPMG.UserManagement.Models
         /// </summary>
         ///  [Required]
         [StringLength(50)]
+        [Required]
         public string LastName { get; set; }
         /// <summary>
         /// UserName.
         /// </summary>
         ///  [Required]
         [StringLength(20)]
+        [Required]
         public string UserName { get; set; }
         /// <summary>
-        /// Password
+        /// Hashed Password
         /// </summary>
+        [Required]
         public string PasswordHash { get; set; }
 
 
-        public ICollection<Role> Roles { get; set; } = new Collection<Role>();
+        public ICollection<UserRole> UserRoles { get; set; } = new Collection<UserRole>();
 
     }
 }

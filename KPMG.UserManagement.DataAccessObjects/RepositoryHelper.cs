@@ -32,16 +32,16 @@ namespace KPMG.UserManagement.DataAccessObjects
 		{
 			return ObjectFactory.GetInstance<RoleRepository>();
 		}
-		//public static UserRoleRepository GetUserRoleRepository()
-		//{
-		//	return ObjectFactory.GetInstance<UserRoleRepository>();
-		//}
-		/// <summary>
-		/// GetUserRepository
-		/// </summary>
-		/// <param name="objectcontext"></param>
-		/// <returns></returns>
-		public static UserRepository GetUserRepository(IObjectContext objectcontext)
+        public static UserRoleRepository GetUserRoleRepository()
+        {
+            return ObjectFactory.GetInstance<UserRoleRepository>();
+        }
+        /// <summary>
+        /// GetUserRepository
+        /// </summary>
+        /// <param name="objectcontext"></param>
+        /// <returns></returns>
+        public static UserRepository GetUserRepository(IObjectContext objectcontext)
 		{
 			return ObjectFactory.GetInstance<UserRepository, IObjectContext>(objectcontext);
 		}
@@ -49,9 +49,9 @@ namespace KPMG.UserManagement.DataAccessObjects
 		{
 			return ObjectFactory.GetInstance<RoleRepository,IObjectContext>(objectcontext);
 		}
-		//public static UserRoleRepository GetUserRoleRepository(IObjectContext objectcontext)
-		//{
-		//	return ObjectFactory.GetInstance<UserRoleRepository,IObjectContext>(objectcontext);
-		//}
-	}
+        public static UserRoleRepository GetUserRoleRepository(IObjectContext objectcontext)
+        {
+            return ObjectFactory.GetInstance<UserRoleRepository, IObjectContext>(objectcontext);
+        }
+    }
 }

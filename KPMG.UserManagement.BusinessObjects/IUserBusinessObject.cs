@@ -66,7 +66,9 @@ namespace KPMG.UserManagement.BusinessObjects
         /// </summary>
         /// <param name="userid"></param>
         /// <returns></returns>
-        //public UserRole GetByUserRoleByUserId(int userid);
+        public UserRole GetByUserRoleByUserId(int userid);
+
+        public Role GetRoleById(int roleid);
 
     }
 }

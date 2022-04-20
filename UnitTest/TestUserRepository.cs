@@ -39,8 +39,9 @@ namespace KPMG.UserManagement.Test.UnitTest
         {
             var user = new User()
             {
-                FirstName = "Martin",
-                LastName = "Fowler",
+                FirstName = "Firstname5",
+                LastName = "Lastname5",
+                UserName= "Firstname5.Lastname5",
                 PasswordHash = "aerzcafecd<"
             };
 

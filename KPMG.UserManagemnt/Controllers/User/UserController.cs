@@ -78,7 +78,7 @@ namespace KPMG.UserManagement.Controllers.User
         /// <param name="usermodel"></param>
         /// <returns></returns>
         [HttpPost]
-        [Authorize(Roles = "Administrator")]
+        [Authorize(Roles = "User")]
         public IActionResult Update([FromBody] UpdateUserApiRequest updateuserrequest)
         {
             UpdateUserApiResponse result = this._userService.UpdateUser(updateuserrequest);
@@ -103,11 +103,11 @@ namespace KPMG.UserManagement.Controllers.User
             {
                 return NotFound("User Does not Exist.");
             }
-            bool result=this._userService.DeleteUser(user);
-            if(!result)
+            bool result = this._userService.DeleteUser(user);
+            if (!result)
                 return StatusCode(StatusCodes.Status500InternalServerError,
                      "Error deleting data");
             return StatusCode(StatusCodes.Status200OK, user);
         }
-    }
+        }
     }

@@ -41,9 +41,9 @@ namespace KPMG.UserManagement.Test.UnitTest
         {
             var userapimodel = new RegisterUserApiRequest
             {
-                FirstName = "Elon",
-                LastName = "Musk",
-                UserName = "Elon.Musk"          
+                FirstName = "FirstName3",
+                LastName = "Lastname3",
+                UserName = "FirstName3.Lastname3"
             };
             return userapimodel;
         }

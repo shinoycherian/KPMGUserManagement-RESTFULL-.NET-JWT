@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "0ivCPpYYpfGwLHUPLXb2uGGafIQb4olRYpANNYyJhYCJ5bPuLO8GVSzJi5mYVuBcVfcA3GDk/S21uwt0DGwGaA==",
+  "dgSpecHash": "WSa0XO+8ruaggXWBgSuY3mPnUmQEWciQEAy0GjH/mx7X9dahA3c9R1xeU2d19dIiei0SMphYIqDqp/qgPIUfJA==",
   "success": true,
   "projectFilePath": "C:\\Users\\416418\\Documents\\Jobs\\2022\\KPMG\\KPMGUserManagement\\KPMG.UserManagement.Application\\KPMG.UserManagement.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\416418\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\416418\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
-    "C:\\Users\\416418\\.nuget\\packages\\bcrypt.net\\0.1.0\\bcrypt.net.0.1.0.nupkg.sha512",
     "C:\\Users\\416418\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\416418\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\416418\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
@@ -105,16 +104,5 @@
     "C:\\Users\\416418\\.nuget\\packages\\unity.configuration\\5.11.2\\unity.configuration.5.11.2.nupkg.sha512",
     "C:\\Users\\416418\\.nuget\\packages\\unity.container\\5.11.5\\unity.container.5.11.5.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'BCrypt.Net 0.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
-      "libraryId": "BCrypt.Net",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

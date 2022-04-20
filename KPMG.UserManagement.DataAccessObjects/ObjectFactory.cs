@@ -24,7 +24,7 @@ namespace KPMG.UserManagement.DataAccessObjects
                 container.RegisterType<IObjectContext, ObjectContextAdapter>();
                 container.RegisterType<DbContext, UserManagementDBContext>(new InjectionConstructor());
                 container.RegisterType<IRepository<User>, EFRepository<User>>();
-               // container.RegisterType<IRepository<UserRole>, EFRepository<UserRole>>();
+                container.RegisterType<IRepository<UserRole>, EFRepository<UserRole>>();
                 container.RegisterType<IRepository<Role>, EFRepository<Role>>();
         }
         /// <summary>
