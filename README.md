@@ -1,9 +1,8 @@
-# KPMGUserManagement-RESTFULL-.NET-JWT
+# KPMGUserManagement-REST FULL API-.NET-JWT
 
 Project
 --
-The solution is based on .NET C# ,to manage simple user management to demonsrtrate the capability  of authentication and autherization using ASP.NT.
-It also present, the REST Full API built based on .NET 5. 
+The solution is based on .NET C#, to manage simple user management, to demonstrate the capability of authentication and authorization using ASP.NET supported by JWT. It also present, the REST Full API built based on .NET 5.
 
 Features
 --
@@ -12,7 +11,6 @@ Features
 -    A user can have two application roles (easily extendable) namely Administrator and  (Common)User.
 -    An Admnistrator user can Read all the users and their details.
 -    An Admnistrator user can delete  specific user.
--    An Admnistrator user can update specific user.
 -    A user can update their details (FirstName,LastName and a password).
 
 
