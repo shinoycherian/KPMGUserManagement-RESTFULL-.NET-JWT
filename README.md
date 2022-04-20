@@ -10,8 +10,8 @@ Features
 -    User Can login by providing a username and password.
 -    A user can have two application roles (easily extendable) namely Administrator and  (Common)User.
 -    An Admnistrator user can Read all the users and their details.
--    An Admnistrator user can delete  specific user.
--    A user can update their details (FirstName,LastName and a password).
+-    An Admnistrator user should be able to delete  specific user.
+-    A user should be able to update their details (FirstName,LastName and a password).
 
 
 Design and Architecture
